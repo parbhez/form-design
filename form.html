@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #6f6f88b3;
+  padding: 20px;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h3 {
+    background-color: #2e2190;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.submit {
+    display: inline-block;
+    background-color: #45a049;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: all .3s;
+    border: white;
+    }
+    .submit:hover {
+    background-color: #19b51f;
+    }
+    .submit {
+    text-decoration: none!important;
+    }
+    
+
+</style>
+
+</head>
+<body>
+
+<h3 style="t">Contact Form</h3>
+
+<div class="container">
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <!-- <input type="submit" class="submit" value="Submit"> -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="main-button">
+         <input type="submit" class="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
